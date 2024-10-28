@@ -333,17 +333,106 @@ void multimapFn()
         cout << it.first << " -> " << it.second << endl;
     }
 }
-
-// functions in STL
-void stlFns()
+void sortFn()
 {
-    int a[5] = {1, 2, 3, 4, 5};
-    sort(a, a + 5);
-    for (int i = 0; i < 5; i++)
+    // sort
+    vector<int> v = {10, 40, 60, 20, 50};
+    sort(v.begin(), v.end());
+    for (auto it : v)
     {
-        cout << a[i] << " ";
+        cout << it << " ";
     }
 }
+
+void accumulateFn()
+{
+    // accumulate
+    // it adds all the elements in the vector
+    vector<int> v = {10, 40, 60, 20, 50};
+    int sum = accumulate(v.begin(), v.end(), 0);
+    cout << sum << endl;
+}
+void countFn()
+{
+    // count
+    // it counts the occurences of an element
+    vector<int> v = {10, 10, 40, 60, 20, 50};
+    int countResult = count(v.begin(), v.end(), 40);
+    cout << countResult << endl;
+}
+
+void findFn()
+{
+    // find
+    // it finds the first occurence of an element
+    vector<int> v = {10, 10, 40, 60, 20, 50};
+    auto it = find(v.begin(), v.end(), 40);
+    cout << (*it) << endl;
+}
+
+void nextPermutation()
+{
+    // prints all the possible permutations in sorted order
+    vector<int> v = {1, 2, 3};
+    do
+    {
+        for (auto it : v)
+        {
+            cout << it << " ";
+        }
+        cout << endl;
+    } while (next_permutation(v.begin(), v.end()));
+}
+
+void prevPermutation()
+{
+    // prints all the possible permutations in reverse sorted order
+    vector<int> v = {3, 2, 1};
+    do
+    {
+        for (auto it : v)
+        {
+            cout << it << " ";
+        }
+        cout << endl;
+    } while (prev_permutation(v.begin(), v.end()));
+}
+void maxElement()
+{
+    // max_element
+    vector<int> v = {10, 40, 60, 20, 50};
+    auto it = max_element(v.begin(), v.end());
+    cout << (*it) << endl;
+}
+void minElement()
+{
+    // min_element
+    vector<int> v = {10, 40, 60, 20, 50};
+    auto it = min_element(v.begin(), v.end());
+    cout << (*it) << endl;
+}
+
+// custom comparator
+bool myCompare(int a, int b)
+{
+    if (a < b)
+        return false;
+    return true;
+}
+void comparatorFn()
+{
+    // comparator
+    // Internal comparator that takes two elements and returns true if the first element is less than the second then returns in boolean
+    vector<int> v = {10, 40, 70, 20, 50};
+    // sort(v.begin(), v.end(), greater<int>()); // ! inbuilt function
+    sort(v.begin(), v.end(), myCompare);
+    // we can provide the sort rule  using the camparator
+    for (auto it : v)
+    {
+        cout << it << " ";
+    }
+}
+
 int main()
 {
     // pairFn();
@@ -359,5 +448,16 @@ int main()
     // mapFn();
     // unordered_mapFn();
     // multimapFn();
+    /// stl functions
+    // sortFn();
+    // accumulateFn();
+    // countFn();
+    // findFn();
+    // nextPermutation();
+    // prevPermutation();
+    // maxElement();
+    // minElement();
+    //! comparators
+    // comparatorFn();
     return 0;
 }
