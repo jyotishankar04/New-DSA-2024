@@ -336,6 +336,7 @@ int main()
     cout << "Divisers: ";
     for (auto i : result)
     {
+
         cout << i << " ";
     }
 
@@ -344,6 +345,7 @@ int main()
     cout << "Divisers: ";
     for (auto i : optimalResult)
     {
+
         cout << i << " ";
     }
 
