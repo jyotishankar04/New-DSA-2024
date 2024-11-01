@@ -1,4 +1,1 @@
-Sum of all elements are: 15
-Count of odd numbers: 3
-Reverse an array Brute: 
-Is sortrd: True
+Highest frequent element: 3
