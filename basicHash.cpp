@@ -5,6 +5,7 @@ class basicHash
 {
 public:
     int highestFrequentElementBrute(int arr[], int n);
+    int highestFrequentElementOptimal(int arr[], int n);
 };
 int basicHash::highestFrequentElementBrute(int arr[], int n)
 {
@@ -44,13 +45,18 @@ int basicHash::highestFrequentElementBrute(int arr[], int n)
     return maxEl;
 }
 
+int basicHash::highestFrequentElementOptimal(int arr[], int n)
+{
+    return 0;
+}
+
 int main()
 {
     int arr[] = {1, 2, 3, 3, 5, 5, 5, 6, 3, 2};
     int n = sizeof(arr) / sizeof(arr[0]);
 
     basicHash obj;
-    cout << "Highest frequent element: " << obj.highestFrequentElementBrute(arr, n) << endl;
-
+    cout << "Highest frequent element Brute : " << obj.highestFrequentElementBrute(arr, n) << endl;
+    cout << "Highest frequent element Optimal :" << obj.highestFrequentElementOptimal(arr, n) << endl;
     return 0;
 }
