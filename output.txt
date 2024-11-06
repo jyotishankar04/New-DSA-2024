@@ -1,1 +1,1 @@
-Highest frequent element: 3
+Sum of max and min frequent elements Optimal : 5
