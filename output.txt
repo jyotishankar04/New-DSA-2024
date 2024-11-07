@@ -1,1 +1,2 @@
-Sum of max and min frequent elements Optimal : 5
+Reversed string: o l l e h 
+Check Palindrome: False
