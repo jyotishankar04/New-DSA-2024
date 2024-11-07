@@ -1,2 +1,1 @@
-Reversed string: o l l e h 
-Check Palindrome: False
+Largest Substring Number: 
