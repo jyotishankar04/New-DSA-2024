@@ -1,1 +1,8 @@
-Largest Substring Number: 
+Reversed string: olleh
+Check Palindrome: True
+Largest Substring Number: 9383
+Check Rotate String Brute: True
+Check Rotate String Optimal: True
+Check Anagram Strings Brute: True
+Check Anagram Strings Optimal: True
+Frequency Sort: e r t 
