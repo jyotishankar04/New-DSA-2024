@@ -332,22 +332,22 @@ int main()
     // cout << "LCM Brute: " << obj.LCMbrute(4, 5) << endl;
     // cout << "LCM Optimal: " << obj.LCMOptimal(4, 30) << endl;
 
-    vector<int> result = obj.diviserOfANumberBrute(36);
-    cout << "Divisers: ";
-    for (auto i : result)
-    {
+    // vector<int> result = obj.diviserOfANumberBrute(36);
+    // cout << "Divisers: ";
+    // for (auto i : result)
+    // {
 
-        cout << i << " ";
-    }
+    //     cout << i << " ";
+    // }
 
-    cout << endl;
-    vector<int> optimalResult = obj.diviserOfANumberOptimal(36);
-    cout << "Divisers: ";
-    for (auto i : optimalResult)
-    {
+    // cout << endl;
+    // vector<int> optimalResult = obj.diviserOfANumberOptimal(36);
+    // cout << "Divisers: ";
+    // for (auto i : optimalResult)
+    // {
 
-        cout << i << " ";
-    }
+    //     cout << i << " ";
+    // }
 
     return 0;
 }

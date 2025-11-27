@@ -159,7 +159,7 @@ int main()
     // bubbleSort(arr, n);
     // insertionSort(arr,n);
     // mergeSort(arr,0,n-1);
-    quickSortHelper(arr, 0, n-1);
+    // quickSortHelper(arr, 0, n-1);
 
     cout << "After sorting the array: ";
     for (int i = 0; i < n; i++)
