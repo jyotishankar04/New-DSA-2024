@@ -39,3 +39,10 @@
 
 # debug information files
 *.dwo
+# ignore executables files from nested directories for c++
+*.exe
+*.out
+*.app
+*/**/*.exe
+*/**/*.out
+*/**/*.app
