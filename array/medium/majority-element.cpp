@@ -61,7 +61,7 @@ public:
 };
 
 int main(){
-    vector<int> nums = {2,2,1,1,1,2,2};
+    vector<int> nums = {5,6,7,4,5,5,5,6,4,5,5,5,7,8,9,0,4,5,65,5,5};
     Solution obj;
     cout<<"Majority Element - Brute Approach: "<<obj.majorityElementBrute(nums)<<endl;
     cout << "Majority Element - Batter Approach: " << obj.majorityElementBatter(nums) << endl;
